@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.attentrack.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_studentDashboardFragment"
+            app:destination="@id/studentDashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentDashboardFragment"
+        android:name="com.example.attentrack.StudentDashboardFragment"
+        android:label="fragment_student_dashboard"
+        tools:layout="@layout/fragment_student_dashboard" >
+        <action
+            android:id="@+id/action_studentDashboardFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_studentDashboardFragment_to_studentCoursesFragment"
+            app:destination="@id/studentCoursesFragment" />
+        <action
+            android:id="@+id/action_studentDashboardFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_studentDashboardFragment_to_studentProfileFragment"
+            app:destination="@id/studentProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentCoursesFragment"
+        android:name="com.example.attentrack.StudentCoursesFragment"
+        android:label="fragment_student_courses"
+        tools:layout="@layout/fragment_student_courses" >
+        <action
+            android:id="@+id/action_studentCoursesFragment_to_studentDashboardFragment"
+            app:destination="@id/studentDashboardFragment" />
+        <action
+            android:id="@+id/action_studentCoursesFragment_to_studentCourseFragment"
+            app:destination="@id/studentCourseFragment" />
+        <action
+            android:id="@+id/action_studentCoursesFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_studentCoursesFragment_to_studentProfileFragment"
+            app:destination="@id/studentProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentCourseFragment"
+        android:name="com.example.attentrack.StudentCourseFragment"
+        android:label="fragment_student_course"
+        tools:layout="@layout/fragment_student_course" >
+        <action
+            android:id="@+id/action_studentCourseFragment_to_studentCoursesFragment"
+            app:destination="@id/studentCoursesFragment" />
+        <action
+            android:id="@+id/action_studentCourseFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.attentrack.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_studentDashboardFragment"
+            app:destination="@id/studentDashboardFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_studentCoursesFragment"
+            app:destination="@id/studentCoursesFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_studentCourseFragment"
+            app:destination="@id/studentCourseFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_studentProfileFragment"
+            app:destination="@id/studentProfileFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentProfileFragment"
+        android:name="com.example.attentrack.StudentProfileFragment"
+        android:label="fragment_student_profile"
+        tools:layout="@layout/fragment_student_profile" >
+        <action
+            android:id="@+id/action_studentProfileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_studentProfileFragment_to_studentCoursesFragment"
+            app:destination="@id/studentCoursesFragment" />
+        <action
+            android:id="@+id/action_studentProfileFragment_to_studentDashboardFragment"
+            app:destination="@id/studentDashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.attentrack.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" >
+        <action
+            android:id="@+id/action_changePasswordFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+</navigation>

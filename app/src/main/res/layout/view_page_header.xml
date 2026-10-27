@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/header_bg"
+    android:orientation="vertical"
+    android:paddingBottom="36dp">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.Attendance.Toolbar"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:subtitleTextColor="@color/header_text"
+        app:titleTextColor="@color/header_text" />
+
+    <TextView
+        android:id="@+id/tvMeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.85"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/header_text"
+        android:textSize="13sp" />
+</LinearLayout>
