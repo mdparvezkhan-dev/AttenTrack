@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/teacherDashboardFragment" android:icon="@drawable/ic_home" android:title="@string/dashboard" />
+    <item android:id="@+id/teacherCoursesFragment" android:icon="@drawable/ic_courses" android:title="@string/courses" />
+    <item android:id="@+id/teacherProfileFragment" android:icon="@drawable/ic_person" android:title="@string/profile" />
+</menu>

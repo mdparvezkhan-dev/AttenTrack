@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode e palette er ujjol version -->
+    <color name="color_1">#E6E7EA</color>
+    <color name="color_2">#6EA8FE</color>
+    <color name="color_3">#3A0620</color>
+    <color name="color_4">#121317</color>
+    <color name="color_5">#9EA0A4</color>
+    <color name="color_6">#E58AC3</color>
+
+    <color name="brand_primary">@color/color_2</color>
+    <color name="brand_on_primary">#0B2A5B</color>
+    <color name="brand_primary_container">#4A1236</color>
+    <color name="brand_on_primary_container">@color/color_6</color>
+    <color name="header_bg">@color/color_3</color>
+    <color name="header_text">#FFFFFF</color>
+    <color name="app_background">@color/color_4</color>
+    <color name="app_surface">#1C1D22</color>
+    <color name="text_primary">@color/color_1</color>
+    <color name="text_secondary">@color/color_5</color>
+    <color name="divider">#339EA0A4</color>
+
+    <color name="success">#4ADE80</color>
+    <color name="success_container">#14532D</color>
+    <color name="warning">#FBBF24</color>
+    <color name="warning_container">#78350F</color>
+    <color name="danger">#F87171</color>
+    <color name="danger_container">#7F1D1D</color>
+</resources>
